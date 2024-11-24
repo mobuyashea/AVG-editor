@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>創建新專案</title>
+    <%- include("partials/styles") %>
+</head>
+<body>
+<%- include("partials/back-main-btn") %>
+    <div id="wrap">
+        <form action="">
+          <h1>創建新專案</h1>
+            <div>
+                <label for="project-name">專案名稱</label> <input type="text" placeholder="例如：怦然心動"  name="project-name" id="project-name">
+            </div>
+            <div>
+                 <label for="project-cover">專案封面</label> <input type="file" name="project-cover" id="project-cover">
+            </div>
+            <div>
+                 <label for="project-desc">專案描述</label> <textarea name="project-desc" id="project-desc"></textarea>
+            </div>
+        <button>新增</button>
+    </form>
+</div>
+    
+</body>
+</html>

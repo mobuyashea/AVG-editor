@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AVG遊戲編輯器</title>
+    <%- include("partials/styles") %>
+  </head>
+  <body>
+    <div id="wrap">
+    
+    <%- include("partials/enter-scene") %>
+  </div>
+    <script>
+      document
+        .querySelector("#characterSetupBtn")
+        .addEventListener("click", () => {
+          console.log("按下按鈕2");
+          window.electron.sendNavigate("/new-character"); // 使用 preload.js 曝露的 API
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<style>
+  :root {
+    --main-color: rgb(20, 75, 117);
+    --s-padding:5px 15px;
+  }
+  *{margin: 0; padding: 0; box-sizing: border-box;}
+  #wrap{
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  input[type=text],textarea{
+    line-height: 2rem;
+    border: 1px solid var(--main-color);
+    border-radius: 3px;
+    padding:5px 10px;
+  }
+  button {
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    background-color: transparent;
+    padding: 8px 20px;
+    border-radius: 3px;
+    font-size: 20px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 280px;
+  }
+  button.back-btn{
+    width: fit-content;
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 17px;
+    padding:var(--s-padding);
+  }
+  form{
+    width: 360px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+  }
+  form div{
+    display: flex;
+    gap:10px;
+    align-items: center;
+  }
+  .flex-box-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+</style>

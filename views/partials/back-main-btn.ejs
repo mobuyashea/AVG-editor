@@ -1,0 +1,7 @@
+<button id="backto-main" class="back-btn">＜</button>
+<script>
+  // 使用 preload 曝露的 electron 对象
+  document.querySelector("#backto-main").addEventListener("click", () => {
+    window.electron.sendNavigate("/"); // 使用 preload.js 曝露的 API
+  });
+</script>

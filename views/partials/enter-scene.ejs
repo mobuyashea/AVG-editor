@@ -1,0 +1,13 @@
+<div class="flex-box-col">
+
+<button id="newProjectBtn" class="line-button">建立新專案</button>
+<button class="line-button">載入新專案</button>
+<button class="line-button">離開AVG editor</button>
+</div>
+
+<script>
+  // 使用 preload 曝露的 electron 对象
+  document.querySelector("#newProjectBtn").addEventListener("click", () => {
+    window.electron.sendNavigate("/new-project"); // 使用 preload.js 曝露的 API
+  });
+</script>
